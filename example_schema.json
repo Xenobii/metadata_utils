@@ -1,0 +1,88 @@
+{
+    "schemaId": "metadata_schema",
+    "version": 0,
+    "groups": [
+        {
+            "id": "example_group",
+            "label": "Example group",
+            "description": "Example description",
+            "dataType": "group",
+            "subgroups": [
+                {
+                    "id": "int",
+                    "label": "Integer",
+                    "dataType": "integer",
+                    "description": null,
+                    "minValue": 1,
+                    "maxValue": 100,
+                    "unit": null
+                },
+                {
+                    "id": "float",
+                    "label": "Float",
+                    "dataType": "integer",
+                    "description": null,
+                    "unit": null,
+                    "floatingPoint": 4
+                },
+                {
+                    "id": "text",
+                    "label": "Text",
+                    "dataType": "text",
+                    "description": null
+                },
+                {
+                    "id": "enum",
+                    "label": "Enum (one option)",
+                    "dataType": "enum",
+                    "description": null,
+                    "options": [
+                        "option1",
+                        "option2"
+                    ]
+                },
+                {
+                    "id": "multienum",
+                    "label": "Enum (multiple options)",
+                    "dataType": "multienum",
+                    "description": null,
+                    "options": [
+                        "option1",
+                        "option2"
+                    ]
+                },
+                {
+                    "id": "reference",
+                    "label": "Reference",
+                    "dataType": "reference",
+                    "description": null,
+                    "target": "Users"
+                },
+                {
+                    "id": "subgroup",
+                    "label": "Subgoup",
+                    "dataType": "group",
+                    "description": null,
+                    "subgroups": [
+                        {
+                            "id": "boolean",
+                            "label": "Boolean",
+                            "dataType": "boolean",
+                            "description": null
+                        },
+                        {
+                            "id": "url",
+                            "label": "URL",
+                            "dataType": "url",
+                            "description": null,
+                            "visibleIf": {
+                                "field": "example_group.subgroup.boolean",
+                                "equals": true
+                            }
+                        }
+                    ]   
+                }
+            ]
+        }
+    ]
+}

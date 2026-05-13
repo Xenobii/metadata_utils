@@ -1,0 +1,376 @@
+{
+    "schemaId": "puc_textile_schema",
+    "version": 1,
+    "groups": [
+        {
+            "id": "documentation",
+            "label": "Documentation",
+            "description": null,
+            "dataType": "group",
+            "subgroups": [
+                {
+                    "id": "identification",
+                    "label": "Identification",
+                    "description": "Basic identification and provenance information for the textile artifact",
+                    "dataType": "group",
+                    "subgroups": [
+                        {
+                            "id": "accession_number",
+                            "label": "Accession Number",
+                            "dataType": "text",
+                            "description": "Unique identifier of the artifact in the database"
+                        },
+                        {
+                            "id": "reference_name",
+                            "label": "Reference Name/Number",
+                            "dataType": "text",
+                            "description": "Reference name or number of the collection where it is kept"
+                        },
+                        {
+                            "id": "current_location",
+                            "label": "Current Location",
+                            "dataType": "text",
+                            "description": "Where the object is kept (e.g., museum, excavation storage room)"
+                        },
+                        {
+                            "id": "external_link",
+                            "label": "External Link",
+                            "dataType": "url",
+                            "description": "Online page dedicated to this artifact if available"
+                        },
+                        {
+                            "id": "origin",
+                            "label": "Origin",
+                            "dataType": "text",
+                            "description": "Excavation or location this object comes from"
+                        },
+                        {
+                            "id": "geolocation",
+                            "label": "Geolocation",
+                            "dataType": "text",
+                            "description": "Geographic coordinates (latitude, longitude)"
+                        },
+                        {
+                            "id": "provenance",
+                            "label": "Provenance",
+                            "dataType": "enum",
+                            "description": "How the object came to the museum",
+                            "options": [
+                                "excavation",
+                                "donation",
+                                "purchase",
+                                "acquisition (process of legal transfer)",
+                                "on loan"
+                            ]
+                        },
+                        {
+                            "id": "belongs_to_group",
+                            "label": "Belongs to a Group",
+                            "dataType": "boolean",
+                            "description": "Whether the object belongs to a larger group of artifacts"
+                        },
+                        {
+                            "id": "belongs_to_subgroup",
+                            "label": "Belongs to a Subgroup",
+                            "dataType": "boolean",
+                            "description": "Whether the object belongs to a subgroup within a group"
+                        },
+                        {
+                            "id": "documented_by",
+                            "label": "Documented by",
+                            "dataType": "reference",
+                            "description": "Name(s) of researcher(s) who documented this artifact",
+                            "target": "Users"
+                        },
+                        {
+                            "id": "date_of_upload",
+                            "label": "Date of Upload",
+                            "dataType": "date",
+                            "description": "Date when the artifact was added to the database"
+                        },
+                        {
+                            "id": "type_of_object",
+                            "label": "Type of Object",
+                            "dataType": "enum",
+                            "description": "General type of textile artifact",
+                            "options": [
+                                "textile",
+                                "costume",
+                                "rope",
+                                "accessory",
+                                "imprint",
+                                "cast",
+                                "cordage",
+                                "band",
+                                "thread",
+                                "yarn",
+                                "cord"
+                            ]
+                        },
+                        {
+                            "id": "specific_type_of_object",
+                            "label": "Specific Type of Object",
+                            "dataType": "enum",
+                            "description": "More specific classification of the textile",
+                            "options": [
+                                "funerary",
+                                "costume",
+                                "utilitarian",
+                                "hat",
+                                "shoe",
+                                "bodice",
+                                "skirt",
+                                "dress",
+                                "head gear"
+                            ]
+                        },
+                        {
+                            "id": "maximum_dimensions",
+                            "label": "Maximum Dimensions",
+                            "dataType": "text",
+                            "description": "Size measurements in m and/or mm (e.g., 200x300mm)"
+                        },
+                        {
+                            "id": "date_period",
+                            "label": "Date/Period",
+                            "dataType": "text",
+                            "description": "Chronological period and date range (e.g., Protogeometric (1100-800BC))"
+                        },
+                        {
+                            "id": "publication",
+                            "label": "Publication",
+                            "dataType": "text",
+                            "description": "Bibliographical references if the artifact has been published"
+                        }
+                    ]
+                },
+                {
+                    "id": "technological_analysis",
+                    "label": "Technological Analysis",
+                    "description": "Detailed technical analysis of weave structure and thread characteristics",
+                    "dataType": "group",
+                    "subgroups": [
+                        {
+                            "id": "structure",
+                            "label": "Primary Structure",
+                            "description": "Information about the basic material composition",
+                            "dataType": "group",
+                            "subgroups": [
+                                {
+                                    "id": "primary_material",
+                                    "label": "Primary Material",
+                                    "dataType": "enum",
+                                    "description": "Main material of the textile (e.g., wool, plant fiber, linen)",
+                                    "options": [
+                                        "wool",
+                                        "fiber",
+                                        "linen",
+                                        "cotton"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "weave_analysis",
+                            "label": "Weave Analysis",
+                            "dataType": "group",
+                            "description": "Information about the weave structure",
+                            "subgroups": [
+                                {
+                                    "id": "type_of_weave",
+                                    "label": "Type of Weave",
+                                    "dataType": "enum",
+                                    "description": "Main weave category",
+                                    "options": [
+                                        "plain/tabby",
+                                        "basket",
+                                        "warp faced",
+                                        "weft-faced",
+                                        "twill",
+                                        "satin",
+                                        "brocade",
+                                        "damask",
+                                        "velvet",
+                                        "ribbed",
+                                        "net",
+                                        "lace",
+                                        "lampas",
+                                        "tablet weaving"
+                                    ]
+                                },
+                                {
+                                    "id": "weave_specification",
+                                    "label": "Weave Specification",
+                                    "dataType": "text",
+                                    "description": "Detailed weave specification (e.g., 2/2 twill, looped, 6/1 satin)"
+                                },
+                                {
+                                    "id": "weave_count",
+                                    "label": "Weave Count",
+                                    "dataType": "text",
+                                    "description": "Density of weave in warps x wefts per cm² or element A x element B / cm²"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "warp_analysis",
+                            "label": "Warp (Element A) Analysis",
+                            "dataType": "group",
+                            "description": "Technical analysis of warp threads",
+                            "subgroups": [
+                                {
+                                    "id": "warp_thread_diameter",
+                                    "label": "Thread Diameter (Warp)",
+                                    "dataType": "text",
+                                    "description": "Measurements in mm and/or microns"
+                                },
+                                {
+                                    "id": "warp_thread_ply",
+                                    "label": "Thread Ply (Warp)",
+                                    "dataType": "enum",
+                                    "description": "Number of plies in warp threads",
+                                    "options": [
+                                        "none",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6"
+                                    ]
+                                },
+                                {
+                                    "id": "warp_thread_twist",
+                                    "label": "Thread Twist (Warp)",
+                                    "dataType": "enum",
+                                    "description": "Direction and type of twist",
+                                    "options": [
+                                        "s",
+                                        "z",
+                                        "s2Z",
+                                        "z2S",
+                                        "I"
+                                    ]
+                                },
+                                {
+                                    "id": "warp_twist_angle",
+                                    "label": "Twist Angle (Warp)",
+                                    "dataType": "enum",
+                                    "description": "Angle of twist",
+                                    "options": [
+                                        "light (number range)",
+                                        "medium (number range)",
+                                        "high (number range)"
+                                    ]
+                                },
+                                {
+                                    "id": "warp_twist_method",
+                                    "label": "Twist Method (Warp)",
+                                    "dataType": "enum",
+                                    "description": "Method of twisting",
+                                    "options": [
+                                        "spinning",
+                                        "splicing"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "weft_analysis",
+                            "label": "Weft (Element B) Analysis",
+                            "dataType": "group",
+                            "description": "Technical analysis of weft threads",
+                            "subgroups": [
+                                {
+                                    "id": "weft_thread_diameter",
+                                    "label": "Thread Diameter (Weft)",
+                                    "dataType": "text",
+                                    "description": "Measurements in mm and/or microns"
+                                },
+                                {
+                                    "id": "weft_thread_ply",
+                                    "label": "Thread Ply (Weft)",
+                                    "dataType": "enum",
+                                    "description": "Number of plies in weft threads",
+                                    "options": [
+                                        "none",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6"
+                                    ]
+                                },
+                                {
+                                    "id": "weft_thread_twist",
+                                    "label": "Thread Twist (Weft)",
+                                    "dataType": "enum",
+                                    "description": "Direction and type of twist",
+                                    "options": [
+                                        "s",
+                                        "z",
+                                        "s2Z",
+                                        "z2S",
+                                        "I"
+                                    ]
+                                },
+                                {
+                                    "id": "weft_twist_angle",
+                                    "label": "Twist Angle (Weft)",
+                                    "dataType": "enum",
+                                    "description": "Angle of twist",
+                                    "options": [
+                                        "light (number range)",
+                                        "medium (number range)",
+                                        "high (number range)"
+                                    ]
+                                },
+                                {
+                                    "id": "weft_twist_method",
+                                    "label": "Twist Method (Weft)",
+                                    "dataType": "enum",
+                                    "description": "Method of twisting",
+                                    "options": [
+                                        "spinning",
+                                        "splicing"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "decoration_analysis",
+                            "label": "Decoration Analysis",
+                            "dataType": "group",
+                            "description": "Information about decorative elements",
+                            "subgroups": [
+                                {
+                                    "id": "type_of_decoration",
+                                    "label": "Type of Decoration",
+                                    "dataType": "enum",
+                                    "description": "Main type of decoration",
+                                    "options": [
+                                        "embroidery",
+                                        "metal threads",
+                                        "dyes",
+                                        "tapestry"
+                                    ]
+                                },
+                                {
+                                    "id": "decoration_specifics",
+                                    "label": "Decoration Specifics",
+                                    "dataType": "text",
+                                    "description": "Detailed description of decoration (e.g., slit tapestry, interlaced tapestry, printed, painted, dyed)"
+                                },
+                                {
+                                    "id": "decoration_material",
+                                    "label": "Decoration Material",
+                                    "dataType": "text",
+                                    "description": "Material used for decoration (e.g., metal, thread, dye)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
