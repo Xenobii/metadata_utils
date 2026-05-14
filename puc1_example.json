@@ -1,0 +1,106 @@
+{
+    "schemaId": "puc_textile_schema",
+    "version": 1,
+    "documentation": {
+        "identification": {
+            "accession_number": "PU 1_2_a",
+            "reference_name": "Stamna T587, T588",
+            "current_location": "Xenokrateion Archaeological Museum, EL",
+            "external_link": "https://www.efaaitl.gr/museums/%CE%B1%CF%81%CF%87%CE%B1%CE%B9%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CE%BA%CE%BF-%CE%BE%CE%B5%CE%BD%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%B5%CE%B9%CE%BF-%CE%BC%CE%BF%CF%85%CF%83%CE%B5%CE%B9%CE%BF/",
+            "origin": "2003, excavation at Stamna, Aitolia, EL",
+            "geolocation": "38.37026162675575, 21.427561424874757",
+            "provenance": "excavation",
+            "belongs_to_group": true,
+            "belongs_to_subgroup": true,
+            "documented_by": "user_001",
+            "date_of_upload": "2026-04-03",
+            "type_of_object": "textile",
+            "specific_type_of_object": "funerary",
+            "maximum_dimensions": "200x300mm",
+            "date_period": "Protogeometric (1100-800BC)",
+            "publication": "Lazaros KOLONAS, Kalliope SARRI, Christina MARGARITI, Ina VANDEN BERGHE, Irene SKALS, Marie-Louise NOSCH. Heirs from the Loom? Funerary textiles from Stamna (Aitolia, Greece). A preliminary analysis. In M. Fotiadis, R. Laffineur, Y. Lolos & A. Vlachopoulos (eds), Hesperos. The Aegean Seen from the West, ISBN 978-90-429-3562-4, pp 533-544"
+        },
+        "technological_analysis": {
+            "structure": {
+                "primary_material": "wool"
+            },
+            "weave_analysis": {
+                "type_of_weave": "plain/tabby",
+                "weave_specification": null,
+                "weave_count": "10x80/cm²"
+            },
+            "warp_analysis": {
+                "warp_thread_diameter": "0.5-1.0 mm",
+                "warp_thread_ply": "none",
+                "warp_thread_twist": "z",
+                "warp_twist_angle": "medium (number range)",
+                "warp_twist_method": null
+            },
+            "weft_analysis": {
+                "weft_thread_diameter": "0.25-0.3 mm",
+                "weft_thread_ply": "none",
+                "weft_thread_twist": "z",
+                "weft_twist_angle": "low (number range)",
+                "weft_twist_method": null
+            },
+            "decoration_analysis": {
+                "type_of_decoration": null,
+                "decoration_specifics": null,
+                "decoration_material": null
+            }
+        }
+    },
+    "analysis": {
+        "identification": {
+            "accession_number": "PU 1_2_a",
+            "reference_name": "Stamna T587, T588",
+            "material_analysed": "textile"
+        },
+        "non_destructive_analysis": {
+            "method_of_analysis": "stereomicroscope",
+            "type_of_instrument": null,
+            "aim": "technological analysis",
+            "result": null
+        },
+        "destructive_analysis": {
+            "sample_material": "textile",
+            "area_of_sample": null,
+            "size_of_samples": "20-30mg",
+            "sample_weight": "20-30mg",
+            "method_of_analysis_destructive": "radiocarbon dating",
+            "type_of_instrument_destructive": "14C-AMS",
+            "aim_destructive": "dating",
+            "result_destructive": "(84.7%) 1611-1369 cal BC, (10.7%) 1361-1297 cal BC"
+        }
+    },
+    "conservation": {
+        "identification": {
+            "accession_number": "PU 1_2_a",
+            "reference_name": "Stamna T587, T588",
+            "material_analysed": "textile"
+        },
+        "condition": {
+            "object_status": "on display",
+            "condition_assessment": "medium",
+            "state_of_preservation": "fragments",
+            "type_of_preservation": "mineralised"
+        },
+        "preventive_conservation": {
+            "environmental_conditions": null,
+            "type_of_container": [
+                "display case"
+            ],
+            "mount": "free",
+            "result": null
+        },
+        "interventive_conservation": {
+            "conservation_performed": true,
+            "conservation_date": "2021",
+            "cleaning": false,
+            "introduction_of_foreign_material": [
+                "net"
+            ],
+            "specific_foreign_material": null
+        }
+    }
+}
